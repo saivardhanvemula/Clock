@@ -6,13 +6,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 .container {
     height: 300px;
     width: 300px;
     border: solid black 1px;
     border-radius: 50%;
-    position: absolute;
+    position: relative;
 }
 .t {
     position: relative;
@@ -28,22 +29,22 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: rotate(deg);
-    transform-origin: 0;
-    transform-origin: 0px 0px;
-    transform-origin: 0% 50%;
     height: 4px;
-    width: 130px;
+    width: 125px;
+    /* transform: rotate(-90deg);  */
+    transform-origin: 0;
+    transform-origin: 0% 50%;
+    transform-origin: 0px 0px;
     background-color: black;
 }
 .minhand {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: rotate(60deg);
+    /* transform: rotate(60deg); */
     transform-origin: 0% 50%;
     height: 3px;
-    width: 130px;
+    width: 125px;
     background-color: black;
 }
 .sechand {
@@ -54,7 +55,7 @@ body {
     /* transform: translate(-50%,-50%); */
     transform-origin: 0;
     height: 2px;
-    width: 130px;
+    width: 125px;
     background-color: black;
 }
 .middle {
@@ -66,4 +67,13 @@ body {
     height: 10px;
     width: 10px;
     border-radius: 50%;
+}
+.timecontainer{
+    padding: 10px;
+    margin-top: 10px;
+    /* height: 75px; */
+    width: 300px;
+    text-align: center;
+    /* background-color: aqua; */
+    font-size: 3rem;
 }
