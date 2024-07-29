@@ -16,4 +16,4 @@ const setTime=()=>{
     // console.log(hr, min, sec);
 }
 // setTime()
-setInterval(setTime);
+setInterval(setTime,1000);
