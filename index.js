@@ -15,5 +15,5 @@ const setTime=()=>{
     time.innerHTML=`${hr}:${min}:${sec} ${hr<=12 ?"AM": "PM"}`
     // console.log(hr, min, sec);
 }
-// setTime()
+setTime()
 setInterval(setTime,1000);
